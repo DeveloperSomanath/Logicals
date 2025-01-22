@@ -10,3 +10,40 @@ public static void Main(string[] args)
       Console.WriteLine ("str1="+str1);
       Console.WriteLine ("str2"+str2);
     }
+//Fibonacci
+
+public static void Main(string[] args)
+    {
+      int temp=0;
+      int num=1;
+      int a=0;
+      for(int i=0;i<100;i++)
+      {
+          a=temp;
+         num=num+temp;
+         temp=num;
+         num=a;
+         Console.WriteLine(num);
+         
+      }
+    }
+
+//Prime Number
+
+public static void Main(string[] args)
+    {
+      for(int i=2;i<100;i++)
+      {
+          bool isPrime=true;
+          for(int j=2;j<i;j++)
+          {
+              if(i%j==0 && i!=j)
+              {
+                  isPrime=false;
+              }
+          }
+          if(isPrime)
+          {
+          Console.WriteLine(i);
+          }
+      }
