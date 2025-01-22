@@ -1,0 +1,12 @@
+//swapping string
+public static void Main(string[] args)
+    {
+      string str1="soma a kind"; //11
+      string str2="use to play cricket";//20
+
+      str1=str1+str2;
+      str2=str1.Substring(0,str1.Length-str2.Length);
+       str1=str1.Substring(str2.Length);
+      Console.WriteLine ("str1="+str1);
+      Console.WriteLine ("str2"+str2);
+    }
