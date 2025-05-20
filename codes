@@ -72,4 +72,31 @@ public static void Main(string[] args)
      num1 = num1 / 10;
  }
  Console.WriteLine(sum);
-   
+
+
+//swastic code
+
+int size = 11; // Should be an odd number
+int mid = size / 2;
+
+for (int i = 0; i < size; i++)
+{
+    for (int j = 0; j < size; j++)
+    {
+        // Top half
+        if ((i == 0 && j >= mid) ||                 // Top horizontal right
+            (j == 0 && i <= mid) ||                 // Left vertical top
+            (i == mid) ||                           // Middle horizontal
+            (j == mid) ||                           // Middle vertical
+            (i == size - 1 && j <= mid) ||          // Bottom horizontal left
+            (j == size - 1 && i >= mid))            // Right vertical bottom
+        {
+            Console.Write("*");
+        }
+        else
+        {
+            Console.Write(" ");
+        }
+    }
+    Console.WriteLine();
+}
